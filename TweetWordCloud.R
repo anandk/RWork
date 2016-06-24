@@ -38,3 +38,4 @@ word_freqs = sort(rowSums(m), decreasing=TRUE)
 dm = data.frame(word=names(word_freqs), freq=word_freqs)
 dm <- dm[dm$freq > 10,]
 wordcloud(dm$word, dm$freq, random.order=FALSE, colors=brewer.pal(16, "Dark2"))
+wordcloud(dm$word, dm$freq, random.order=FALSE, colors=brewer.pal(16, "Set2"))
